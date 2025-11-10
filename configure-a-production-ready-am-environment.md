@@ -22,7 +22,7 @@ Perform the following steps on both the AM API component and the AM Gateway comp
 2. In the `services:` section, set the `http:` `enabled` value to `false`:
 
 {% code title="gravitee.yml" %}
-````
+
 ```yaml
 services:
   core:
@@ -39,7 +39,7 @@ services:
         users:
           admin: adminadmin
 ```
-````
+
 {% endcode %}
 
 To learn more about the internal APIs, see:
@@ -61,7 +61,7 @@ Perform the following steps on the AM API component:
 2. In the `security \ providers` section, remove any users you do not need:
 
 {% code title="gravitee.yml" overflow="wrap" %}
-````
+
 ```yaml
 # Security section is used to defined organization users available on AM bootstrap
 security:
@@ -92,7 +92,7 @@ security:
           password: $2a$10$NG5WLbspq8V1yJDzUKfUK.oum94qL/Ne3B5fQCgekw/Y4aOEaoFZq
           role: ORGANIZATION_OWNER
 ```
-````
+
 {% endcode %}
 
 3.  Update the default administrator password:
@@ -119,7 +119,7 @@ Perform the following steps on the AM API and Gateway components:
 2. In the `jwt` section, update the `secret` value:
 
 {% code title="gravitee.yml" overflow="wrap" %}
-````
+
 ```yaml
 # JWT used to generate signed token for management security mechanism (Bearer Token) and to verify emails
 jwt:
@@ -131,7 +131,7 @@ jwt:
   #cookie-domain: .gravitee.io # cookie domain (default "")
   #cookie-secure: true # cookie secure flag (default false)
 ```
-````
+
 {% endcode %}
 
 3. You can also update other values, such as:
