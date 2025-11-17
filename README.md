@@ -22,7 +22,7 @@
 
 
 
-## Example 3
+## Example 3 - looks good
 
 <figure><img src=".gitbook/assets/Google Chrome 2025-11-17 09.40.37.png" alt=""><figcaption></figcaption></figure>
 
