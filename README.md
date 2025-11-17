@@ -1,4 +1,4 @@
-# Self-hosting
+# Readme - Landing Page of Space
 
 In this article, you will be guided through how to host Lowcoder on your own server using Docker Compose or Docker.
 
@@ -110,11 +110,7 @@ docker run -d --name Lowcoder -p 3000:3000 -v "$PWD/stacks:/Lowcoder-stacks" low
 
 ## 2) Scale
 
-For bigger expected loads that need scaling in a cluster environment, we provide [separate images of backend and frontend services](https://hub.docker.com/u/lowcoderorg) with a customizable Dockerfile.
-
-{% embed url="https://lowcoder.cloud/images/Screenshot-2023-08-27-at-21.56.51.png" %}
-Multi-Image Installation to scale. API-Service & Node-Service can get scaled independently.
-{% endembed %}
+For bigger expected loads that need scaling in a cluster environment, we provide [separate images of backend and frontend services](https://hub.docker.com/u/lowcoderorg) with a customizable Dockerfile
 
 ### Separate images: services in stateless containers <a href="#multi" id="multi"></a>
 
@@ -209,8 +205,7 @@ By default, Lowcoder uses the built-in MongoDB and Redis installed inside the co
 
 {% tabs %}
 {% tab title="Docker-Compose" %}
-Add environment variables `MONGODB_URI` and `REDIS_URI` in `docker-compose.yml` downloaded in your working directory.\
-
+Add environment variables `MONGODB_URI` and `REDIS_URI` in `docker-compose.yml` downloaded in your working directory.\\
 {% endtab %}
 
 {% tab title="Docker" %}
@@ -230,8 +225,7 @@ By default, the supervisor will run under the user `uid=9001`. You can specify t
 
 {% tabs %}
 {% tab title="Docker-Compose" %}
-Add an environment variable `LOCAL_USER_ID` in `docker-compose.yml` downloaded in your working directory.\
-
+Add an environment variable `LOCAL_USER_ID` in `docker-compose.yml` downloaded in your working directory.\\
 {% endtab %}
 
 {% tab title="Docker" %}
@@ -254,8 +248,7 @@ With an SSL certificate, you can securely visit self-hosted Lowcoder with HTTPS 
 {% tabs %}
 {% tab title="Docker-Compose" %}
 1. Copy `fullchain.pem` and `privkey.pem` to the `$PWD/stacks/ssl` directory.
-2. In `$PWD/docker-compose.yml`, change the value of `ports` to `"3443:3443"`.\
-
+2. In `$PWD/docker-compose.yml`, change the value of `ports` to `"3443:3443"`.\\
 {% endtab %}
 
 {% tab title="Docker" %}
@@ -342,4 +335,3 @@ In response, you will get a 200 Status code if the service is up and running and
     }
 }
 ```
-
