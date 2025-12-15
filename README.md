@@ -1,6 +1,6 @@
 # Readme - Landing Page of Space
 
-## Example 1: first heading is missing but second heading is there
+## Example 1: first heading is missing but second heading is there 
 
 <figure><img src=".gitbook/assets/Google Chrome 2025-11-17 09.40.25.png" alt=""><figcaption></figcaption></figure>
 
