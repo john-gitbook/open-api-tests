@@ -2,7 +2,7 @@
 title: Test Version History
 ---
 
-### Test Version History is now available in Test Settings
+### Test Version History is now available in Test Setting
 
 You can now view and revert to previous saved versions of a test. Selecting a previous version from the drop-down list will load that configuration into the test settings form, which you can then save and enable for the test.
 
